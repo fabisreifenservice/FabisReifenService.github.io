@@ -1,96 +1,103 @@
 <!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", charset="utf-8">
-    <title>Fabis Reifenservice</title>
-    <link rel="icon" type="image/x-icon" href="Finalv2_vector.svg">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="wrapper">
-      <img src="Finalv2_vector.svg" alt="Fabis Reifen Service" style="max-width:100%;height:auto;"></br>
-      <div id="contentText">
-      <h1><b>Ihre Reifen- & Fahrzeugservice vor Ort</b></h1></br>
-      <h2><i>Zuverlässig. Flexibel. Fair.</i></h2>
-      <!-- Table 1 -->
-        <table>
-        <tr>
-          <th style="color:red"><b>Reifenservice</b></th>
-          <th> </th>
-        </tr>
-        <tr>
-          <td>Reifenwechsel (Sommer/Winter)</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Montage auf Felge (PKW & Kleintransporter)</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Räder auswuchten</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Reifenlagerung (sicher & trocken)</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Reifenprüfung auf Schäden & Profiltiefe</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Ventiltausch</td>
-          <td>XX€</td>
-        </tr>
-      </table>
-      <!-- Table 2 -->
-      <table>
-          <th style="color:red"><b>Zubehör & Kleiner Service</b></th>
-          <th> </th>
-        <tr>
-          <td>Scheibenwischer-Wechsel</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Batterie-Wechsel (ohne Bordnetz-Programmierung)</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Auffüllen von Wischwasser & Frostschutz</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Luftdruck- & Sichtkontrolle (Reifen, Batterie, Flüssigkieten)</td>
-          <td>XX€</td>
-        </tr>
-      </table>
-        <!-- Table 3 -->
-        <table>
-          <th style="color:red"><b>Fahrzeugpflege</b></th>
-          <th> </th>
-        <tr>
-          <td>Innenreinigung (Saugen, Oberflächen, Scheiben)</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Außenreinigung (Handwäsche)</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Lackpolitur & -versiegelung</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Felgenreinigung</td>
-          <td>XX€</td>
-        </tr>
-        <tr>
-          <td>Kunststoff- & Gummipflege</td>
-          <td>XX€</td>
-        </tr>
-      </table>
-        
+<html>
+<head>
+<title>Fabis Reifen Service</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Finalv2_vector.svg" style="width:100%">
+  <a href="https://maps.app.goo.gl/FP3Shqusp5e7LQfQ6" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Anfahrt</p>
+  </a>
+  <a href="" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Kontakt</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="https://maps.app.goo.gl/FP3Shqusp5e7LQfQ6" class="w3-bar-item w3-button" style="width:25% !important">Anfahrt</a>
+    <a href="" class="w3-bar-item w3-button" style="width:25% !important">Kontakt</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Fabis Reifen Service</h1>
+    <p>Zuverlässig. Flexibel. Fair.</p>
+    <img src="Finalv2_vector.svg" alt="Logo" class="w3-image" width="1200" height="800">
+  </header>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Reifenservice</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Reifen Wechsel (Sommer/Winter)</li>
+          <li class="w3-padding-16">Montage auf Felge (PKW & Kleintransporter)</li>
+          <li class="w3-padding-16">Räder auswuchten</li>
+          <li class="w3-padding-16">Reifenprüfung auf Schäden & Profiltiefe</li>
+          <li class="w3-padding-16">Ventiltausch</li>
+          <li class="w3-padding-16">
+            <h2> XXX € </h2>
+            <span class="w3-opacity">pro Leistung</span>
+          </li>
+        </ul>
       </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Zubehör & Kleiner Service</li>
+          <li class="w3-padding-16">Scheibenwischer Wechsel</li>
+          <li class="w3-padding-16">Batterie Wechsel (ohne Bordnetz Programmierung)</li>
+          <li class="w3-padding-16">Auffüllen von Wischwasser & Frostschutz</li>
+          <li class="w3-padding-16">Luftdruck- & Sichtkontrolle (Reifen, Batterie, Flüssigkeiten)</li>
+          <li class="w3-padding-16">
+            <h2> XXX €</h2>
+            <span class="w3-opacity">pro Leistung</span>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
     </div>
-  </body>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
