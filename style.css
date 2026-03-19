@@ -1,7 +1,7 @@
 .maps {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   padding-top: 75%; 
 }
 
@@ -9,7 +9,7 @@
 .responsive-iframe {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 500;
   bottom: 0;
   right: 0;
   width: 100%;
